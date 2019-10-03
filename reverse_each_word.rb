@@ -1,7 +1,7 @@
 def reverse_each_word(string)
-  new_string= ""
+  new_string= []
   %w[string].each do |word|
-    new_string += "#{word.reverse}"
+    new_string.push("#{word.reverse}")
   end
-  new_string
+  new_string.join(" ")
 end
